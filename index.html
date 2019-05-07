@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viweport" content = "width = device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "description" content = "Welcome To The Biggest Online Tailor Shop in BD">
+    <meta name = "keywords" content = "Welcome To The Biggest Online Tailor Shop in BD">
+    <meta name = "author" content = "Evan">
+    <title>TailorBD.com | Welcome</title>
+    <link rel="stylesheet" href = "./css/style.css">
+
+  </head>
+  <body>
+    <header>
+      <div class = "container">
+        <div id="branding">
+          <h1><span class = "highlight"><a href="index.html">TailorBD</a></span>.com</h1>
+        </div>
+        <nav>
+          <u1>
+            <li class = "current"><a href="index.html">Home</a></li>
+            <li><a href="nearby.html">Nearby Shops</a></li>
+            <li><a href="postad.html">Post Your Ad</a></li>
+            <li><a href="signup.html">Sign-up</a></li>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Search Nearby shop</h1>
+        <p></p>
+        <form>
+          <input type="text" placeholder="...">
+          <p></p>
+          <button type="search" class="button_1"> 🔍 </button>
+        </form>
+      </div>
+    </section>
+    <section id="newsletter">
+      <div class = "container">
+        <h1>Welcome To The Biggest Online Tailor Shop of Bangladesh</h1>
+      </div>
+    </section>
+    <section id="custom">
+      <div class="container">
+        <h1>Search by your choice: </h1>
+        <form>
+        <div class="multipleselect">
+          <div class="selectbox" onclick="showcheckboxes()">
+            <select><option>Select Area</option></select>
+            <div class="overselect"></div>
+          </div>
+          <div id="checkboxes">
+            <label for="one"><input type="checkbox" id="one">Mirpur</label>
+            <label for="two"><input type="checkbox" id="two">Dhanmondi</label>
+            <label for="three"><input type="checkbox" id="three">Khilgaon</label>
+          </div>
+        </div>
+      </form>
+
+      <form>
+      <div class="multipleselect">
+        <div class="selectbox" onclick="showcheckboxes1()">
+          <select><option>Select Category</option></select>
+          <div class="overselect"></div>
+        </div>
+        <div id="checkboxes1">
+          <label for="one"><input type="checkbox" id="one">Panjabi</label>
+          <label for="two"><input type="checkbox" id="two">Shirt</label>
+          <label for="three"><input type="checkbox" id="three">Pants</label>
+          <label for="three"><input type="checkbox" id="three">pajama</label>
+          <label for="three"><input type="checkbox" id="three">T-shirts</label>
+          <label for="three"><input type="checkbox" id="three">Jeans</label>
+          <label for="three"><input type="checkbox" id="three">Suits</label>
+        </div>
+      </div>
+    </form>
+    <button type="search" class="button_4">Search</button>
+</div>
+</section>
+
+      <script>
+      var expanded = false;
+      function showcheckboxes()
+      {
+        var checkboxes = document.getElementById("checkboxes");
+        if (!expanded) {
+          checkboxes.style.display = "block";
+          expanded = true;
+        }
+        else {
+          checkboxes.style.display = "none";
+          expanded = false;
+        }
+      }
+      </script>
+
+      <script>
+      var expanded1 = false;
+      function showcheckboxes1()
+      {
+        var checkboxes1 = document.getElementById("checkboxes1");
+        if (!expanded1) {
+          checkboxes1.style.display = "block";
+          expanded1 = true;
+        }
+        else {
+          checkboxes1.style.display = "none";
+          expanded1 = false;
+        }
+      }
+      </script>
+
+    </div>
+    </section>
+    <section id="boxes">
+      <div class = "container">
+        <div class = "box">
+          <img src="./img/hns.jpg">
+          <h3>Help & Support</h3>
+          <p>F.A.Q</p>
+          <p>Contact with us</p>
+          <p>Membership</p>
+        </div>
+        <div class = "box">
+          <img src="./img/social.jpg">
+          <h3>Social</h3>
+          <p>Facebook</p>
+          <p>E-mail</p>
+          <p>Twitter</p>
+        </div>
+        <div class = "box">
+          <img src="./img/login.png">
+          <h3>Terms & Conditions</h3>
+          <p>About us</p>
+          <p>Terms and conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <footer>
+      <p>TailorBD, Copyright &copy; 2018</p>
+    </footer>
+
+  </body>
+</html>

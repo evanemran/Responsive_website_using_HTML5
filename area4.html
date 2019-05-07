@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viweport" content = "width = device-width">
+    <meta name = "description" content = "Welcome To The Biggest Online Tailor Shop in BD">
+    <meta name = "keywords" content = "Welcome To The Biggest Online Tailor Shop in BD">
+    <meta name = "author" content = "Evan">
+    <title>TailorBD | Nearby</title>
+    <link rel="stylesheet" href = "./css/style.css">
+
+
+  </head>
+  <body>
+    <header>
+      <div class = "container">
+        <div id="branding">
+          <h1><span class = "highlight"><a href="index.html">TailorBD</a></span>.com</h1>
+        </div>
+        <nav>
+          <u1>
+            <li><a href="index.html">Home</a></li>
+            <li class = "current"><a href="nearby.html">Nearby Shops</a></li>
+            <li><a href="postad.html">Post Your Ad</a></li>
+            <li><a href="signup.html">Sign-up</a></li>
+
+        </nav>
+      </div>
+    </header>
+
+    <div id="map"></div>
+    <script>
+    function initmap()
+    {
+      var location = {lat:23.771783,lng:90.363067};
+      var map = new google.maps.Map(document.getElementById("map"),{zoom:16,center:location});
+    }
+    </script>
+    <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDZQkfp6206JtdnXa5IIlYpw4CiA5bWRIQ&callback=initmap">
+
+    </script>
+
+
+    <div class="sidenav">
+      <a href="area1.html">Mirpur</a>
+      <a href="area2.html">Mohammadpur</a>
+      <a href="area3.html">Dhanmondi</a>
+      <a href="area4.html">Shyamoli</a>
+      <a href="area5.html">Jhigatola</a>
+      <a href="area6.html">Uttara</a>
+      <a href="area7.html">Khilgaon</a>
+      <a href="area8.html">Mohakhali</a>
+      <a href="area9.html">Badda</a>
+      <a href="area10.html">Lalmatia</a>
+      <a href="area">Mugda</a>
+      <a href="area">Bonani</a>
+      <a href="area">Gulshan</a>
+      <a href="area">Azimpur</a>
+    </div>
+
+    <section id="popularshop">
+      <div class="container">;
+        <div class="main">
+          <aside id= "sidebar1">
+            <div class="dark">
+              <h1>Popular Shops near Shyamoli : </h1>
+              <h2>Shop Name: </h2>
+              <p>Address: </p>
+              <p>Contact: </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    </body>
+    </html>
+
+
+
+    <footer>
+      <p>TailorBD, Copyright &copy; 2018</p>
+    </footer>
+
+  </body>
+</html>
